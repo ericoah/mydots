@@ -17,3 +17,5 @@ ln -s $HOME/mydots/diretorio $HOME/.config/diretorio
 - awesome
 - suckless (dwm)
 - mpd
+- xfce4
+- cinamon

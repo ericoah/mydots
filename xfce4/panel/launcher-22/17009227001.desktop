@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=/home/erico/Games/Yuzu/yuzu.AppImage
+Icon=gnome-arcade
+StartupNotify=true
+Terminal=false
+Categories=Utility;X-XFCE;X-Xfce-Toplevel;
+OnlyShowIn=XFCE;
+Name=Run Program...
+Name[pt]=Executar programa...
+Name[pt_BR]=Yuzu
+Comment=Enter a command you want to launch
+Comment[pt]=Introduza um comando que deseja iniciar
+Comment[pt_BR]=
+Keywords=run;command;application;program;finder;search;launcher;everything;spotlight;sherlock;applesearch;unity dash;krunner;synapse;ulauncher;launchy;gnome do;pie;apwal;recoll;alfred;quicksilver;tracker;beagle;kupfer;
+Keywords[pt]=executar;comando;aplicação;programa;encontrar;pesquisar;lançador;tudo;spotlight;sherlock;applesearch;unity dash;krunner;synapse;ulauncher;launchy;gnome do;pie;apwal;recoll;alfred;quicksilver;tracker;beagle;kupfer;
+Keywords[pt_BR]=executar;comando;aplicativo;programa;localizador;pesquisa;lançador;tudo;spotlight;sherlock;applesearch;unity dash;krunner;synapse;ulauncher;launchy;gnome do;pie;apwal;recoll;alfred;quicksilver;trackerr;beagle;kupfer;
+X-XFCE-Source=file:///usr/share/applications/xfce4-run.desktop
+Path=
