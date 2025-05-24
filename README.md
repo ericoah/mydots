@@ -13,3 +13,4 @@ ln -s $HOME/mydots/diretorio $HOME/.config/diretorio
 - dunst
 - polybar
 - rofi
+- nvim
