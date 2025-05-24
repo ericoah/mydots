@@ -15,3 +15,4 @@ ln -s $HOME/mydots/diretorio $HOME/.config/diretorio
 - rofi
 - nvim
 - awesome
+- suckless (dwm)
