@@ -14,3 +14,4 @@ ln -s $HOME/mydots/diretorio $HOME/.config/diretorio
 - polybar
 - rofi
 - nvim
+- awesome
