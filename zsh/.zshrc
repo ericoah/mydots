@@ -116,7 +116,9 @@ export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 export W3M_DIR="$XDG_DATA_HOME"/w3m
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+# export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export XAUTHORITY=$HOME/.Xauthority
+
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

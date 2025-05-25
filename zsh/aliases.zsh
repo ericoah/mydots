@@ -1,7 +1,7 @@
 # Alias do void linux
 
 alias xu='sudo xbps-install xbps && sudo xbps-install -Suv'
-alias xin='sudo xbps-install'
+alias xi='sudo xbps-install'
 alias xr='sudo xbps-remove -Rcon'
 alias xl='xbps-query -l'
 alias xf='xl | grep'
@@ -9,7 +9,7 @@ alias xs='xbps-query -Rs'
 alias xd='xbps-query -x'
 alias clrk='sudo vkpurge rm all && sudo rm -rf /var/cache/xbps/*'
 alias halt='sudo halt'
-alias poweroff='sudo poweroff'
+alias poweroff='sudo poweroff -h now'
 alias reboot='sudo reboot'
 alias shutdown='sudo shutdown'
 
@@ -26,7 +26,7 @@ alias nr='sudo nala remove'
 
 # Meus alias
 alias vim='nvim'
-alias zalias='vim ~/.oh-my-zsh/custom/aliases.zsh'
+alias zalias='vim ~/.config/zsh/aliases.zsh'
 alias ll='ls -l'
 if [ -x "$(command -v exa)" ]; then
     alias ls="exa --icons"
