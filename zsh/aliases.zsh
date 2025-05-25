@@ -33,7 +33,7 @@ if [ -x "$(command -v exa)" ]; then
     alias la="exa --long --all --group"
 fi
 alias grep='rg'
-alias cat='batcat'
+alias cat='bat'
 alias zshrc='vim ~/.config/zsh/.zshrc'
 alias bsrc='vim ~/.config/bspwm/bspwmrc'
 alias sxrc='vim ~/.config/sxhkd/sxhkdrc'
@@ -165,3 +165,5 @@ alias clickpaste='sleep 3; xdotool type "$(xclip -o -selection clipboard)"'
 # KITTY - alias to be able to use kitty features when connecting to remote servers(e.g use tmux on remote server)
 
 alias kssh="kitty +kitten ssh"
+
+alias zen=""
