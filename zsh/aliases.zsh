@@ -33,7 +33,7 @@ if [ -x "$(command -v exa)" ]; then
     alias la="exa --long --all --group"
 fi
 alias grep='rg'
-alias cat='bat'
+alias cat='batcat'
 alias zshrc='vim ~/.config/zsh/.zshrc'
 alias bsrc='vim ~/.config/bspwm/bspwmrc'
 alias sxrc='vim ~/.config/sxhkd/sxhkdrc'
