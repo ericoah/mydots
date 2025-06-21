@@ -1,14 +1,14 @@
 #!/bin/sh
 
 getDefaultSink() {
-    defaultSink=$(pactl info | awk -F : '/Fonte padrão:/{print $2}')
-    description=$(pactl list sinks | sed -n "/${defaultSink}/,/Descrição/s/^\s*Descrição\(.*\)/\1/p")
+    defaultSink=$(pactl info | awk -F : '/Default Source:/{print $2}')
+    description=$(pactl list sinks | sed -n "/${defaultSink}/,/Description/s/^\s*Description\(.*\)/\1/p")
     echo "${description}"
 }
 
 getDefaultSource() {
-    defaultSource=$(pactl info | awk -F : '/Fonte padrão:/{print $2}')
-    description=$(pactl list sources | sed -n "/${defaultSource}/,/Descrição/s/^\s*Descrição\(.*\)/\1/p")
+    defaultSource=$(pactl info | awk -F : '/Default Source:/{print $2}')
+    description=$(pactl list sources | sed -n "/${defaultSource}/,/Description/s/^\s*Description\(.*\)/\1/p")
     echo "${description}"
 }
 

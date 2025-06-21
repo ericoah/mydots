@@ -23,9 +23,9 @@ super + e
 
 # Browser
 super + b
-	flatpak run com.brave.Browser
+	brave
 super + alt + b	
-	thorium-browser
+	zen-browser
 
 # Pavucontrol
 super + v
@@ -46,7 +46,7 @@ super + ctrl + p
 	scrot -s $HOME/Imagens/Capturas/'captura_%m-%d-%Y_%H-%M-%S.png' -e 'xclip -selection clipboard -target image/png -i $f'
 
 super + z
-	feh --randomize --bg-fill ~/Imagens/wallpapers/
+	feh --randomize --bg-fill ~/Pictures/backgrounds/
 
 # Redshift - luz noturna
 
