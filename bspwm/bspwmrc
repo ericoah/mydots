@@ -2,6 +2,9 @@
 
 # Autostart
 
+# Polkit
+/usr/lib/polkit-kde/polkit-kde-authentication-agent-1 &
+
 ## Layout do teclado
 setxkbmap -layout us -variant intl &
 
