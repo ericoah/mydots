@@ -1,0 +1,177 @@
+ {
+    // General Settings
+    
+   "position": "top",
+    "layer": "top",
+    "margin": "5px 5px 0px 5px",
+    "spacing": 0,
+
+    "modules-left": [
+        "custom/appmenuicon",
+        "hyprland/workspaces",
+        "group/quicklinks",
+        "wlr/taskbar"
+         
+    ],
+    
+    "modules-center": [
+        "hyprland/window"
+    ],
+    
+    "modules-right": [
+        // "battery",
+        "cpu",
+	"temperature",
+	"custom/temp",
+        "memory",
+        "pulseaudio",
+        "bluetooth",
+        "tray",
+         "clock",
+         "custom/exit"
+    ],
+    
+    // Rofi Application Launcher
+    "custom/appmenuicon": {
+        "format": "󰣇",
+        "on-click": "wofi --show drun -replace",
+        "on-click-right": "~/.config/hypr/scripts/keybindings.sh",
+        "tooltip": false
+    },
+  
+    // Workspaces
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {
+			"urgent": "",
+			"active": "",
+			"default": ""
+        },
+        "persistent-workspaces": {
+             "*": 5
+        }
+    },
+
+    // Group Quicklinks
+    "group/quicklinks": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/filemanager",
+            "custom/browser"
+         ]
+    },
+
+     // Filemanager Launcher
+    "custom/filemanager": {
+        "format": "",
+        "on-click": "dolphin",
+        "tooltip": false
+    },
+
+    // Browser Launcher
+    "custom/browser": {
+        "format": "",
+        "on-click": "brave",
+        "tooltip": false
+    },
+
+    // Taskbar
+        "wlr/taskbar": {
+            "format": "{icon}",
+            "icon-size": 18,
+            "tooltip-format": "{title}",
+            "on-click": "activate",
+            "on-click-middle": "close",
+            "ignore-list": [
+            "Alacritty"
+            ],
+        },
+    
+    // Hyprland Window
+    "hyprland/window": {
+        "rewrite": {
+            "(.*) - Brave": "$1",
+            "(.*) - Chromium": "$1",
+            "(.*) - Brave Search": "$1",
+            "(.*) - Outlook": "$1",
+            "(.*) Microsoft Teams": "$1"
+        },
+        "separate-outputs": true
+    },
+   
+    // CPU
+    "cpu": {
+        "format": " {usage}%",
+        "on-click": "alacritty -e htop",
+    },
+
+    // Temperatura
+    "temperature": {
+	    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+	    "format": "🌡️{temperatureC}°C",
+	    "interval": 5,
+	    "critical-threshold": 70,
+	    "format-critical": "🔥{temperatureC}°C"
+    },
+
+
+    // Memory
+    "memory": {
+        "format": " {}%",
+        "on-click": "alacritty -e htop"
+    },
+
+
+    // Pulseaudio
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}{volume}%",
+        "format": "{volume}% ",
+        "format-bluetooth": "{icon}{volume}% {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    // Bluetooth
+    "bluetooth": {
+        "format-disabled": "",
+        "format-off": "",
+        "interval": 30,
+        "on-click": "blueman-manager",
+        "format-no-controller": ""
+    },
+
+    // System tray
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 2 
+    },
+
+    // Clock
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "tooltip": false
+    },
+
+    // Power Menu
+    "custom/exit": {
+        "format": "",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+}

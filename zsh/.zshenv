@@ -1,7 +1,10 @@
 # default apps
 export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="brave"
+export VIDEO="mpv"
+export PAGER="less"
+export OPENER="xdg-open"
 
 # Adds ~/.local/bin and subfolders to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -maxdepth 1 -type d -printf %p:)%%:}"

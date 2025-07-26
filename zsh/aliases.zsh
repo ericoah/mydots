@@ -37,6 +37,7 @@ alias cat='batcat'
 alias zshrc='vim ~/.config/zsh/.zshrc'
 alias bsrc='vim ~/.config/bspwm/bspwmrc'
 alias sxrc='vim ~/.config/sxhkd/sxhkdrc'
+alias ff='fastfetch'
 
 
 #######################################################

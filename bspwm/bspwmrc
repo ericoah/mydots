@@ -2,9 +2,19 @@
 
 # Autostart
 
-# Polkit
-/usr/lib/polkit-kde/polkit-kde-authentication-agent-1 &
+# Xautority sddm setup 
+bash sudo fix-xauth.sh
 
+## Dual monitor
+xrandr --output HDMI-0 --mode 1920x1080 --output DP-2 --mode 2560x1440 --scale 0.8 --rate 180 --primary --right-of HDMI-0
+
+
+# Polkit
+# /usr/lib/polkit-kde/polkit-kde-authentication-agent-1 &
+# Iniciar o agente de autenticação do KDE (polkit)
+if ! pgrep -x polkit-kde-authentication-agent-1 > /dev/null; then
+    /usr/lib/polkit-kde-authentication-agent-1 &
+fi
 ## Layout do teclado
 setxkbmap -layout us -variant intl &
 
@@ -13,7 +23,7 @@ picom --config ~/.config/picom/picom.conf &
 
 ## Pano de fundo da área de trabalho sempre mudando
 ## Preserva com nitrogem e muda com o feh
-nitrogen --restore &
+# nitrogen --restore &
 feh --randomize --no-fehbg --bg-fill /home/erico/Pictures/backgrounds/ &
 
 ## Define explicitamente o tema e o tamanho do cursor
@@ -51,8 +61,14 @@ blueman-applet &
 ## Evitar que a tela desligue
 xset s off -dpms s noblank &
 
-# Comandos do BSPWM
-bspc monitor -d I II III IV V VI VII VIII IX X
+## Comandos do BSPWM
+
+# Dual Monitor
+bspc monitor DP-2 -d I II III IV V 
+bspc monitor HDMI-0 -d VI VII VII IX X
+
+# Single monitor
+# bspc monitor -d I II III IV V VI VII VIII IX X
 
 bspc config border_width 2
 bspc config window_gap 2

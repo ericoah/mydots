@@ -113,6 +113,10 @@ alt+ {_,shift + }Tab
 super + ctrl + {Left,Right}
 	bspc desktop -f {prev,next}.local
 
+# focus the next/previous monitor
+super + alt + {Left,Right}
+	bspc monitor -f {prev,next}
+
 # focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
