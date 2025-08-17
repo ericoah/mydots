@@ -3,7 +3,7 @@
     
    "position": "top",
     "layer": "top",
-    "margin": "5px 5px 0px 5px",
+    "margin": "4px 4px 0px 4px",
     "spacing": 0,
 
     "modules-left": [
@@ -27,8 +27,8 @@
         "pulseaudio",
         "bluetooth",
         "tray",
-         "clock",
-         "custom/exit"
+        "clock",
+        "custom/exit"
     ],
     
     // Rofi Application Launcher
@@ -81,7 +81,7 @@
     // Taskbar
         "wlr/taskbar": {
             "format": "{icon}",
-            "icon-size": 18,
+            "icon-size": 14,
             "tooltip-format": "{title}",
             "on-click": "activate",
             "on-click-middle": "close",
@@ -158,7 +158,7 @@
 
     // System tray
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 14,
         "spacing": 2 
     },
 
