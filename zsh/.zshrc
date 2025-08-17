@@ -1,19 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
- # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
-
-
 # History in cache directory:
 HISTSIZE=100000
 SAVEHIST=100000
@@ -36,7 +20,7 @@ setopt inc_append_history # append command to history file immediately after exe
 setopt share_history
 
 autoload -U compinit 
-compinit
+ compinit
 
 
 # If you come from bash you might have to change your $PATH.
@@ -118,7 +102,7 @@ export W3M_DIR="$XDG_DATA_HOME"/w3m
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 # export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
-export XAUTHORITY=$HOME/.Xauthority
+# export XAUTHORITY=$HOME/.Xauthority
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
