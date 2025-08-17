@@ -1,4 +1,4 @@
-# Diretório com minhas configuraçoes
+# Diretório com minhas configurações
 
 Criei um diretório separado do meu .config, coloquei os diretórios com as principais configurações listadas abaixo e linkey uma a uma ao meu .config
 
@@ -19,3 +19,6 @@ ln -s $HOME/mydots/diretorio $HOME/.config/diretorio
 - mpd
 - xfce4
 - cinamon
+- hyprland
+- waybar
+- wlogout
